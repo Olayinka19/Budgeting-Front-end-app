@@ -4,7 +4,7 @@ const transactions = express.Router();
 const transactionData = require('../models/transactions.js');
 const { validateURL } = require("../models/validations")
 // index Route
-// console.log(transactionData["1"]);
+
 transactions.get("/", (req, res) => {
     res.json(transactionData);
 });
